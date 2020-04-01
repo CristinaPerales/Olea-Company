@@ -14,7 +14,7 @@ import javax.persistence.*;
 
 public class Profesor extends Usuario {
 
-	
+	@Column(nullable = false)
 	private String departamento;
 	
 	@ManyToMany

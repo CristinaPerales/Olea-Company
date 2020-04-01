@@ -17,8 +17,11 @@ public class Curriculum implements Serializable {
 
 	@Id @GeneratedValue
 	private Long id;
+	@Column(nullable = false)
 	private String idiomas;
+	@Column(nullable = false)
 	private String experienciaLaboral;
+	@Column(nullable = false)
 	@Temporal(TemporalType.DATE)
 	private Date disponibilidadHoraria;
 	private static final long serialVersionUID = 1L;

@@ -19,7 +19,9 @@ public class Asignaturas implements Serializable {
 	   
 	@Id @GeneratedValue
 	private Long codigoAsignatura;
+	@Column(nullable = false)
 	private Integer creditos;
+	@Column(nullable = false)
 	private String nombreAsignatura;
 	
 	@ManyToOne

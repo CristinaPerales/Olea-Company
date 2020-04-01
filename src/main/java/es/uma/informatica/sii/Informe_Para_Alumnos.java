@@ -15,6 +15,7 @@ public class Informe_Para_Alumnos implements Serializable {
 
 	@Id @GeneratedValue
 	private Long idInforme;
+	@Column(nullable = false)
 	private String informeProfesor;
 	private String informeONG;
 	private String valoracionAlumno;

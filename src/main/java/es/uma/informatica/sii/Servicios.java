@@ -16,11 +16,15 @@ public class Servicios implements Serializable {
 
 	@Id @GeneratedValue
 	private Long codigoServicio;
+	@Column(nullable = false)
 	private String tipoServicio;
+	@Column(nullable = false)
 	private String nombre;
 	private String descripcion;
 	private Integer numParticipantes;
+	@Column(nullable = false)
 	private Integer numHoras;
+	@Column(nullable = false)
 	private String zona;
 	
 	@ManyToOne

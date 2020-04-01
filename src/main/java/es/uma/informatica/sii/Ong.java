@@ -12,11 +12,14 @@ import javax.persistence.*;
 
 public class Ong extends Usuario {
 
-	
+	@Column(nullable = false)
 	private String nombreONG;
+	@Column(nullable = false)
 	private String direccion;
 	private String telefono;
+	@Column(nullable = false)
 	private String ciudad;
+	@Column(nullable = false)
 	private String pais;
 	private String paginaWeb;
 	private static final long serialVersionUID = 1L;

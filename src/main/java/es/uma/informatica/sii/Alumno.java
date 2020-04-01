@@ -14,7 +14,7 @@ import javax.persistence.*;
 
 public class Alumno extends Usuario{
 
-	
+	@Column(nullable = false)
 	private Integer creditos;
 	private Integer horasLibre;
 	

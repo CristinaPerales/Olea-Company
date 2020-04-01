@@ -17,9 +17,12 @@ public class Actividades implements Serializable {
 
 	@Id @GeneratedValue
 	private Long idActividad;
+	@Column(nullable = false)
 	private String tipoActividad;
+	@Column(nullable = false)
 	@Temporal(TemporalType.DATE)
 	private Date fechaActividad;
+	@Column(nullable = false)
 	private String lugarRealizacion;
 	private String descripcion;   
 	

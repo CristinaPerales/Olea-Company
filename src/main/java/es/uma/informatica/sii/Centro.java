@@ -17,6 +17,7 @@ public class Centro implements Serializable {
 	   
 	@Id @GeneratedValue
 	private Long codigoCentro;
+	@Column(nullable = false)
 	private String nombreCentro;
 	
 	private static final long serialVersionUID = 1L;
